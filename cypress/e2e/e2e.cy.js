@@ -2,7 +2,7 @@ describe('fluxo e2e', ()=> {
     it('realizando compra com usuário cadastrado', ()=>{
       cy.visit('https://magento.nublue.co.uk/')
       cy.get('div[class="panel header"] a[href$="y51ay8%2C/"]').click()
-      cy.get('#email').type('nilay_conte23@wj.com')
+      cy.get('#email').type('nilay_conte24@wj.com')
       cy.get('fieldset[class$="login"] div[class$="required"] #pass').type('134679rA')
       cy.get('button[class="action login primary"]').click()
       cy.wait(5000)
@@ -29,8 +29,6 @@ describe('fluxo e2e', ()=> {
       cy.wait(5000)
       cy.get('button[data-role="opc-continue"]').click()
       cy.wait(5000)
-      //cy.get('input[name="billing-address-same-as-shipping"]').click()
-      
       cy.get('button[class="action primary checkout"]').click()
       cy.wait(2500)
       const congratulations = 'Thank you for your purchase!'
