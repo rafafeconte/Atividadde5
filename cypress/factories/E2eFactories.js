@@ -10,6 +10,7 @@ export default {
       var phone = faker.phone.phoneNumber()
       var thanks = 'Thank you for your purchase!'
       var loggedIn = 'Welcome, Nilay Conte!'
+      var mensagem = 'Thank you for registering with Main Website Store.'
       
       var dados = {
           companyName: company,
@@ -18,7 +19,8 @@ export default {
           stateAdress: state,
           phoneNumber: phone,
           thankYou: thanks,
-          logged: loggedIn
+          logged: loggedIn,
+          mensagemThanks: mensagem
           
       }
       return dados
