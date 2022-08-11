@@ -1,15 +1,15 @@
 import cadastroFactory from '../factories/E2eFactories'
 var formulario = cadastroFactory.form() 
+const url = Cypress.config("baseUrl")
 
 describe('fluxo e2e', ()=> {
     it('realizando compra com usuário cadastrado', ()=>{
-      cy.visit('https://magento.nublue.co.uk/')
+      cy.visit(url)
       cy.get('div[class="panel header"] a[href$="y51ay8%2C/"]').click()
-      cy.get('#email').type('nilay_conte28@wj.com')
+      cy.get('#email').type('nilay_conte29@wj.com')
       cy.get('fieldset[class$="login"] div[class$="required"] #pass').type('134679rA')
       cy.get('button[class="action login primary"]').click()
       cy.wait(5000)
-      //const loggedIn = 'Welcome, Nilay Conte!' 
      // cy.contains('div[class="panel wrapper"] li[class="greet welcome"]', loggedIn).should('be.visible')
       cy.get('#search').type('jackets{enter}')
       cy.get('img[alt="Adrienne Trek Jacket"]').click()
@@ -35,7 +35,6 @@ describe('fluxo e2e', ()=> {
       cy.wait(5000)
       cy.get('button[class="action primary checkout"]').click()
       cy.wait(2500)
-      const congratulations = 'Thank you for your purchase!'
-      cy.contains('span[class="base"]', congratulations).should('be.visible')
+      cy.contains('span[class="base"]', formulario.thankYou).should('be.visible')
     })
 })

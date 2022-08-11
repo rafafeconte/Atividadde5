@@ -8,13 +8,17 @@ export default {
       var number = faker.address.buildingNumber()
       var state = faker.address.state()
       var phone = faker.phone.phoneNumber()
+      var thanks = 'Thank you for your purchase!'
+      var loggedIn = 'Welcome, Nilay Conte!'
       
       var dados = {
           companyName: company,
           streetName: street,
           numberBuilding: number,
           stateAdress: state,
-          phoneNumber: phone
+          phoneNumber: phone,
+          thankYou: thanks,
+          logged: loggedIn
           
       }
       return dados
