@@ -6,7 +6,7 @@ describe('fluxo e2e', ()=> {
     it('realizando compra com usuário cadastrado', ()=>{
       cy.visit(url)
       cy.get('div[class="panel header"] a[href$="y51ay8%2C/"]').click()
-      cy.get('#email').type('nilay_conte29@wj.com')
+      cy.get('#email').type('nilay_conte33@wj.com')
       cy.get('fieldset[class$="login"] div[class$="required"] #pass').type('134679rA')
       cy.get('button[class="action login primary"]').click()
       cy.wait(5000)
