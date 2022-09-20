@@ -11,7 +11,7 @@ describe('cadastro de usuario', ()=>{
         cy.get('#lastname').type('Conte')
         cy.get('input[id="is_subscribed"]').click()
         cy.get('#assistance_allowed_checkbox').click()
-        cy.get('div[class="field required"] input[type="email"]').type('nilay_conte35@wj.com')
+        cy.get('div[class="field required"] input[type="email"]').type('nilay_conte40@wj.com')
         cy.get('input[id="password"]').type('134679rA')
         cy.get('input[id="password-confirmation"]').type('134679rA')
         cy.get('button[class="action submit primary"]').click()
