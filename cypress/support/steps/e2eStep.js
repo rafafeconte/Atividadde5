@@ -1,3 +1,4 @@
+import {Given, When, Then} from 'cypress-cucumber-preprocessor'
 
 Given(/^que o usuário acessa o site luma$/, () => {
 	return true;
