@@ -1,0 +1,73 @@
+[
+  {
+    "description": "  Como um usuário\n  Quero realizar cadastro com dados válidos\n  Para ter acesso as funcionalidades de usuário cadastrado",
+    "keyword": "Feature",
+    "name": "Cadastro de usuário",
+    "line": 2,
+    "id": "cadastro-de-usuário",
+    "tags": [],
+    "uri": "signIn.feature",
+    "elements": [
+      {
+        "id": "cadastro-de-usuário;cadastro-com-sucesso",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Cadastro com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que o usuário acessa o site luma",
+            "result": {
+              "status": "passed",
+              "duration": 10620000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "o usuário clica no link Criar Conta",
+            "result": {
+              "status": "passed",
+              "duration": 10242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "o usário preenche o formulário com \"Nilay\" \"Conte\" \"nilay_conte@wj.com.br\" \"134679rA\" \"134679rA\"",
+            "result": {
+              "status": "passed",
+              "duration": 2700000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "o usuário clica no botão Criar Conta",
+            "result": {
+              "status": "passed",
+              "duration": 18266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "o usário deverá ser a mensagem \"Thank you for registering with Main Website Store.\"",
+            "result": {
+              "status": "passed",
+              "duration": 3149000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

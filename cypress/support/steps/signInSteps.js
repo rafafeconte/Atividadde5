@@ -1,21 +1,28 @@
-import {Given, When, Then} from 'cypress-cucumber-preprocessor'
+import {When} from 'cypress-cucumber-preprocessor/steps'
+import SignInPage from '../pageObjects/signInPage'
+import HomePage from '../pageObjects/homePage';
+import MyAccountPage from '../pageObjects/myAccountPage';
 
-Given(/^que o usuário acessa a página inicial do e-commerce$/, () => {
-	return true;
-});
+const signPage = new SignInPage();
+const homePage = new HomePage();
+const myAccountPage = new MyAccountPage();
 
 When(/^o usuário clica no link Criar Conta$/, () => {
-	return true;
+	homePage.CreateAnAccount();
 });
 
-When(/^o usário preenche o formulário de cadastro com dados válidos$/, () => {
-	return true;
+When(/^o usário preenche o formulário com "([^"]*)" "([^"]*)" "([^"]*)" "([^"]*)" "([^"]*)"$/, 
+(firstName, lastName, email, pass, confirmPass) => {
+	signPage.fillFrom(firstName, lastName, email, pass, confirmPass);
 });
 
 When(/^o usuário clica no botão Criar Conta$/, () => {
-	return true;
+	signPage.submitAccountForm();
 });
 
-Then(/^o usário deverá ser direcionado para página Minha Conta$/, () => {
-	return true;
+
+When(/^o usário deverá ser a mensagem "([^"]*)"$/, (mensagem) => {
+	cy.wait(3000);
+	myAccountPage.messageSucess(mensagem);
 });
+

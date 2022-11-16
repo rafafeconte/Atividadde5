@@ -1,0 +1,133 @@
+[
+  {
+    "description": "  sendo um usuário cadastro no sistema\n  Posso efetuar o login no sistema\n  Para que possa realiza compras no site",
+    "keyword": "Feature",
+    "name": "Fluxo E2e",
+    "line": 1,
+    "id": "fluxo-e2e",
+    "tags": [],
+    "uri": "e2e.feature",
+    "elements": [
+      {
+        "id": "fluxo-e2e;realizar-login-e-finalizar-compra-com-fluxo-completo",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Realizar login e finalizar compra com fluxo completo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "que o usuário acessa o site luma",
+            "result": {
+              "status": "passed",
+              "duration": 12844000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "o usuário clica no link Sign In no cabeçalho",
+            "result": {
+              "status": "passed",
+              "duration": 2784000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "o usuário realiza login com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 4518000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "o usuário pesquisa por produto na barra de pesquisa",
+            "result": {
+              "status": "passed",
+              "duration": 15807000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "o usuário escolhe produto pesquisado",
+            "result": {
+              "status": "passed",
+              "duration": 9460000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "o usuário escolhe tamanho e cor",
+            "result": {
+              "status": "passed",
+              "duration": 20730000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "o usuário adiciona produto no carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 39635000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "o usuário preenche os campo da página shipping and address",
+            "result": {
+              "status": "passed",
+              "duration": 38512000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "o usuário seleciona o metodo de envio",
+            "result": {
+              "status": "passed",
+              "duration": 15531000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "o usuário clica no botão Place order",
+            "result": {
+              "status": "passed",
+              "duration": 12546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "o usuário deverá ver a mensagem \"Thank you for your purchase!\"",
+            "result": {
+              "status": "passed",
+              "duration": 41634000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

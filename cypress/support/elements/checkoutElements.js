@@ -1,4 +1,4 @@
-class ShippingPaymentsElements {
+class CheckoutElements {
 
   inputCompany = () => 'input[name="company"]';
 
@@ -20,8 +20,13 @@ class ShippingPaymentsElements {
 
   buttonNext = () => 'button[data-role="opc-continue"]';
 
+  shippingMethods = () => '#checkout-step-shipping_method input[class="radio"]';
+  
+  paymentMethod = () => 'div[class="checkout-billing-address"] input[type="checkbox"]';
+
   buttonPlaceOrder = () => 'button[class="action primary checkout"]';
 
+  thankMessage = () => 'span[class="base"]';
 }
 
-export default ShippingPaymentsElements;
+export default CheckoutElements;

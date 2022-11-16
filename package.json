@@ -10,7 +10,16 @@
   "license": "MIT",
   "devDependencies": {
     "@faker-js/faker": "^7.4.0",
-    "cypress": "^10.3.1",
+    "cypress": "^10.8.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".json"
+    }
   }
 }

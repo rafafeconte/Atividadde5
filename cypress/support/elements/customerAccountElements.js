@@ -1,5 +1,7 @@
 class CustomerAccountElements {
 
+  url = () => '/customer/account/create/';
+
   inputFirstName = () => '#firstname';
 
   inputLastName = () => '#lastname';
@@ -15,8 +17,6 @@ class CustomerAccountElements {
   inputConfirmPassword = () => 'input[id="password-confirmation"]';
 
   buttonCreateAnAccount = () => 'button[class="action submit primary"]';
-
-  message = () => 'div[role="alert"]';
 
 }
 

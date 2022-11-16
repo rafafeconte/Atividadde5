@@ -14,7 +14,6 @@ Feature: Fluxo E2e
     And o usuário adiciona produto no carrinho
     And o usuário preenche os campo da página shipping and address
     And o usuário seleciona o metodo de envio
-    And o usário seleciona o metodo de pagamento
     And o usuário clica no botão Place order
     Then o usuário deverá ver a mensagem "Thank you for your purchase!"
 
